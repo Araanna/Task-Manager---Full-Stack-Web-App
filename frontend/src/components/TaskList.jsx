@@ -98,6 +98,7 @@ const TaskList = () => {
                     <TaskItem
                         key={task.id}
                         task={task}
+                        onClick={() => openEditModal(task)}
                         onEdit={openEditModal}
                         onDelete={handleDeleteTask}
                         onToggleComplete={handleToggleComplete}
